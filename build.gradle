@@ -1,0 +1,36 @@
+//// build.gradle (project-level)
+//plugins {
+//    // These plugins are applied in the module build.gradle files.
+//    alias(libs.plugins.android.application) apply false
+//    alias(libs.plugins.jetbrains.kotlin.android) apply false
+//    alias(libs.plugins.dagger.hilt.android) apply false
+//}
+// Root-level build.gradle
+
+buildscript {
+
+    dependencies {
+        // Android Gradle Plugin
+        classpath "com.android.tools.build:gradle:8.5.2"
+        // Kotlin Gradle Plugin – use a stable version (e.g., 1.9.0)
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0"
+        // Hilt Gradle Plugin
+        classpath "com.google.dagger:hilt-android-gradle-plugin:2.51.1"
+    }
+}
+
+
+// Root-level build.gradle
+buildscript {
+    dependencies {
+        classpath libs.build.gradle
+        classpath libs.jetbrains.kotlin.gradle.plugin
+        classpath libs.google.hilt.android.gradle.plugin
+    }
+}
+
+plugins {
+    alias(libs.plugins.android.application) apply false
+   alias(libs.plugins.jetbrains.kotlin.android) apply false
+  alias(libs.plugins.dagger.hilt.android) apply false}
+
