@@ -33,5 +33,4 @@ This Android app is a location-based feature built with Jetpack Compose, Flow, N
 
 1. **Clone the repository:**
 
-   ```bash
    git clone https://github.com/robyrawat/LocationBasedApp.git
